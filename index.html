@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/output.css">
+    </head>
+    <body class="m-0 p-0 w-full h-screen">
+        <div class="mx-4 p-8 border-sky-600 border-solid border-2 my-4 rounded-sm">
+            <span><h2>Survey Form</h2></span>
+            <hr>
+            <span><h2>This form enquires about your preferences for the upcoming party</h2></span>
+            
+                <form>
+                    <div class="border-solid border-2 border-sky-500">
+                      <label for="name" id="label-name">
+                        Name
+                      </label>
+                      <input type="text" id="name" placeholder="Enter your name" />
+                    </div>
+                    <div class="form-control">
+                      <label for="email" id="label-email">
+                        Email
+                      </label>
+                      <input type="email" id="email" placeholder="Enter your email" />
+                    </div>
+                    <div class="form-control">
+                      <label for="age" id="label-age">
+                        Age
+                      </label>
+                      <input type="number" id="age" placeholder="Enter your age" />
+                    </div>
+                  
+                    <div class="form-control">
+                      <label for="role" id="label-role">
+                        Which option best describes you?
+                      </label>
+                      <select name="role" id="role">
+                        <option value="student">Student</option>
+                        <option value="intern">Intern</option>
+                        <option value="professional">Professional</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  
+                    <div class="form-control">
+                      <label id="label-attendance">
+                        Will you attend the party?
+                      </label>
+                      <label for="attend-1" id="label-attend-1">
+                        <input type="radio" id="attend-1" name="attend">Yes</input>
+                      </label>
+                      <label for="attend-2" id="label-attend-2">
+                        <input type="radio" id="attend-2" name="attend">No</input>
+                      </label>
+                    </div>
+                  
+                    <div class="form-control">
+                      <label>What did you like about the program?</label>
+                      <br>
+                      <label for="inp-1">
+                        <input type="checkbox" name="inp">Training</input>
+                      </label>
+                      <br>
+                      <label for="inp-2">
+                        <input type="checkbox" name="inp">The Learning Sessions from Industry Experts</input>
+                      </label>
+                      <br>
+                      <label for="inp-3">
+                        <input type="checkbox" name="inp">Community Meetups</input>
+                      </label>
+                      <br>
+                      <label for="inp-4">
+                        <input type="checkbox" name="inp">Brown Bag Sessions</input>
+                      </label>
+                      <br>
+                      <label for="inp-5">
+                        <input type="checkbox" name="inp">Switching to Hybrid Mode</input>
+                      </label>
+                      <br>
+                      <label for="inp-6">
+                        <input type="checkbox" name="inp">Food, Office etc.</input>
+                      </label>
+                    </div>
+                  
+                  <div class="form-control">
+                      <label for="comment">
+                        Any comments or suggestions
+                      </label>
+                      <textarea name="comment" id="comment" placeholder="Enter your comment here">
+                              </textarea>
+                    </div>
+                    <div class="button">
+                      <button type="reset" value="reset" id="reset">
+                        Reset
+                      </button>
+                      <button type="submit" value="submit" id="submit">
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+        </div>
+    
+    </body>
+</html>
