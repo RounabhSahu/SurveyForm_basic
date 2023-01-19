@@ -8,100 +8,100 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/output.css">
     </head>
-    <body class="m-0 p-0 w-full h-screen">
-        <div class="mx-4 p-8 border-sky-600 border-solid border-2 my-4 rounded-sm">
-            <span><h2>Survey Form</h2></span>
+    <body class="m-0 p-0 w-full h-fit bg-gradient-to-b from-violet-500/90 to-orange-700/70">
+        <div class="mx-auto p-8 w-5/12 min-w-fit border-sky-600 border-solid border-2 my-4 rounded-md bg-gray-800 pt-2">
+            <span><h2 class="text-3xl text-center text-blue-300 pb-2">Survey Form</h2></span>
             <hr>
-            <span><h2>This form enquires about your preferences for the upcoming party</h2></span>
-            
-                <form>
-                    <div class="border-solid border-2 border-sky-500">
-                      <label for="name" id="label-name">
-                        Name
-                      </label>
-                      <input type="text" id="name" placeholder="Enter your name" />
-                    </div>
-                    <div class="form-control">
-                      <label for="email" id="label-email">
-                        Email
-                      </label>
-                      <input type="email" id="email" placeholder="Enter your email" />
-                    </div>
-                    <div class="form-control">
-                      <label for="age" id="label-age">
-                        Age
-                      </label>
-                      <input type="number" id="age" placeholder="Enter your age" />
-                    </div>
-                  
-                    <div class="form-control">
-                      <label for="role" id="label-role">
-                        Which option best describes you?
-                      </label>
-                      <select name="role" id="role">
-                        <option value="student">Student</option>
-                        <option value="intern">Intern</option>
-                        <option value="professional">Professional</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-                  
-                    <div class="form-control">
-                      <label id="label-attendance">
-                        Will you attend the party?
-                      </label>
-                      <label for="attend-1" id="label-attend-1">
-                        <input type="radio" id="attend-1" name="attend">Yes</input>
-                      </label>
-                      <label for="attend-2" id="label-attend-2">
-                        <input type="radio" id="attend-2" name="attend">No</input>
-                      </label>
-                    </div>
-                  
-                    <div class="form-control">
-                      <label>What did you like about the program?</label>
-                      <br>
-                      <label for="inp-1">
-                        <input type="checkbox" name="inp">Training</input>
-                      </label>
-                      <br>
-                      <label for="inp-2">
-                        <input type="checkbox" name="inp">The Learning Sessions from Industry Experts</input>
-                      </label>
-                      <br>
-                      <label for="inp-3">
-                        <input type="checkbox" name="inp">Community Meetups</input>
-                      </label>
-                      <br>
-                      <label for="inp-4">
-                        <input type="checkbox" name="inp">Brown Bag Sessions</input>
-                      </label>
-                      <br>
-                      <label for="inp-5">
-                        <input type="checkbox" name="inp">Switching to Hybrid Mode</input>
-                      </label>
-                      <br>
-                      <label for="inp-6">
-                        <input type="checkbox" name="inp">Food, Office etc.</input>
-                      </label>
-                    </div>
-                  
-                  <div class="form-control">
-                      <label for="comment">
-                        Any comments or suggestions
-                      </label>
-                      <textarea name="comment" id="comment" placeholder="Enter your comment here">
-                              </textarea>
-                    </div>
-                    <div class="button">
-                      <button type="reset" value="reset" id="reset">
-                        Reset
-                      </button>
-                      <button type="submit" value="submit" id="submit">
-                        Submit
-                      </button>
-                    </div>
-                  </form>
+            <span><h2 class="text-blue-300 pl-2 py-2">This form enquires about your preferences for the upcoming party</h2></span>
+            <hr>
+            <form class="flex-col justify-around space-y-5 py-4 pl-2">
+                <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm">
+                  <label for="name" id="label-name" class="text-green-200/90 mx-2">
+                    Name
+                  </label>
+                  <input type="text" id="name" placeholder="Enter your name" class="pl-2 text-lime-800 rounded border-solid border-2 border-blue-300 " />
+                </div>
+                <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm">
+                  <label for="email" id="label-email" class="text-green-200/90 mx-2">
+                    Email 
+                  </label>
+                  <input type="email" id="email" placeholder="Enter your email" class="ml-1 pl-2 text-lime-800 rounded border-solid border-2 border-blue-300 " />
+                </div>
+                <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm">
+                  <label for="age" id="label-age" class="text-green-200/90 mx-2">
+                    Age
+                  </label>
+                  <input type="number" id="age" placeholder="Enter your age" class="ml-3 pl-2 text-lime-800 rounded border-solid border-2 border-blue-300 " />
+                </div>
+              
+                <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm">
+                  <label for="role" id="label-role" class="text-green-200/90 mx-2">
+                    Which option best describes you?
+                  </label>
+                  <select name="role" id="role"  class="pl-2 rounded border-solid border-2 border-blue-300 ">
+                    <option value="student">Student</option>
+                    <option value="intern">Intern</option>
+                    <option value="professional">Professional</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              
+                <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm">
+                  <label id="label-attendance" class="text-green-200/90 mx-2">
+                    Will you attend the party?
+                  </label>
+                  <label for="attend-1" id="label-attend-1"  class="mx-2 px-2 text-white bg-green-700 rounded-xl">
+                    <input type="radio" id="attend-1" name="attend"> Yes</input>
+                  </label>
+                  <label for="attend-2" id="label-attend-2"  class="mx-2 pl-2 pr-3 text-white bg-red-700 rounded-xl">
+                    <input type="radio" id="attend-2" name="attend"> No</input>
+                  </label>
+                </div>
+              
+                <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm flex flex-col">
+                  <label class="text-green-200/90 mx-2">What did you like about the program?</label>
+                  <br>
+                  <label for="inp-1" class="ml-4 text-amber-300 px-2 py-1">
+                    <input type="checkbox" name="inp"> Training</input>
+                  </label>
+                  <br>
+                  <label for="inp-2" class="ml-4 text-amber-300 px-2 py-1">
+                    <input type="checkbox" name="inp"> The Learning Sessions from Industry Experts</input>
+                  </label>
+                  <br>
+                  <label for="inp-3" class="ml-4 text-amber-300 px-2 py-1">
+                    <input type="checkbox" name="inp"> Community Meetups</input>
+                  </label>
+                  <br>
+                  <label for="inp-4" class="ml-4 text-amber-300 px-2 py-1">
+                    <input type="checkbox" name="inp"> Brown Bag Sessions</input>
+                  </label>
+                  <br>
+                  <label for="inp-5" class="ml-4 text-amber-300 px-2 py-1">
+                    <input type="checkbox" name="inp"> Switching to Hybrid Mode</input>
+                  </label>
+                  <br>
+                  <label for="inp-6" class="ml-4 text-amber-300 px-2 py-1">
+                    <input type="checkbox" name="inp"> Food, Office etc.</input>
+                  </label>
+                </div>
+              
+              <div class="bg-blue-200/5 p-1 py-2  mx-2 rounded-sm flex flex-col">
+                  <label for="comment" class="text-green-200/90 m-2">
+                    Any comments or suggestions
+                  </label>
+                  <textarea name="comment" id="comment" placeholder="Enter your comment here" class="m-2 rounded-md pl-2 text-lime-800">
+                          </textarea>
+                </div>
+                <div class=" p-1 py-2  mx-2 rounded-sm flex flex-row justify-center space-around space-x-2">
+                  <button type="reset" value="reset" id="reset" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+                    Reset
+                  </button>
+                  <button type="submit" value="submit" id="submit" class="px-4 py-1text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+                    Submit
+                  </button>
+                </div>
+              </form>
         </div>
     
     </body>
